@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterasi/images/googleIcon.dart';
 import 'package:flutterasi/buttons/bookButton.dart';
+import 'package:flutterasi/buttons/longListButton.dart';
 
 class home extends StatelessWidget {
   @override
@@ -51,7 +52,8 @@ class home extends StatelessWidget {
 
             ],
           ),
-          bookButtons()
+          bookButtons(),
+          LongListButton()
         ],
 
       ),

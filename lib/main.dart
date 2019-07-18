@@ -10,6 +10,7 @@ class myFlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+
         title: "Asi",
         debugShowCheckedModeBanner: false,
         home: home(),
