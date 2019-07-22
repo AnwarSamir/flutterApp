@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterasi/images/googleIcon.dart';
 import 'package:flutterasi/buttons/bookButton.dart';
 import 'package:flutterasi/buttons/longListButton.dart';
+import 'package:flutterasi/buttons/LoginButton.dart';
 
 class home extends StatelessWidget {
   @override
@@ -47,13 +48,14 @@ class home extends StatelessWidget {
                   fontSize: 20,
                   color: Colors.white,
                   decoration: TextDecoration.none
-                ),
+                )
               ),
 
             ],
           ),
           bookButtons(),
-          LongListButton()
+          LongListButton(),
+          LoginButton()
         ],
 
       ),

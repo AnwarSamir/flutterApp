@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterasi/app_screens/LoginFormScreen.dart';
 
-class LongListButton extends StatelessWidget{
+class LoginButton extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -13,9 +13,9 @@ class LongListButton extends StatelessWidget{
         onPressed: (){
           gotoNextScreen(context);
         },
-        child: Text("go to long list ",style: TextStyle(
+        child: Text("Login Form",style: TextStyle(
             decoration: TextDecoration.none,
-            color: Colors.red
+            color: Colors.green
         ),),
       ),
     );
