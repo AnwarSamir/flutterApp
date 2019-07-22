@@ -14,6 +14,10 @@ class myFlutterApp extends StatelessWidget {
         title: "Asi",
         debugShowCheckedModeBanner: false,
         home: home(),
+        theme:ThemeData(
+          brightness: Brightness.dark,
+          primaryColor: Colors.redAccent
+        )
 
     );
   }
