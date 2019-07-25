@@ -5,14 +5,18 @@ class bookButtons extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
+      width: MediaQuery.of(context).size.width,
+
       margin: EdgeInsets.only(left: 60,right: 60),
+
       child: RaisedButton(
+
         color: Colors.white,
        elevation: 5,
        onPressed: (){
         showAlert(context);
        },
-       child: Text("Book Now",style: TextStyle(
+       child: Text("Show pop up Dialog(AlertDialog) ",style: TextStyle(
          decoration: TextDecoration.none,
          color: Colors.red
        ),),

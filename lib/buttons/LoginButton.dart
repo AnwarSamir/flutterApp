@@ -6,6 +6,7 @@ class LoginButton extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
+      width: MediaQuery.of(context).size.width,
       margin: EdgeInsets.only(left: 60,right: 60),
       child: RaisedButton(
         color: Colors.white,

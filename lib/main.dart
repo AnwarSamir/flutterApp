@@ -10,14 +10,8 @@ class myFlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-
-        title: "Asi",
         debugShowCheckedModeBanner: false,
         home: home(),
-        theme:ThemeData(
-          brightness: Brightness.dark,
-          primaryColor: Colors.redAccent
-        )
 
     );
   }
