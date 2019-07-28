@@ -8,7 +8,12 @@ import 'package:http/http.dart' as http;
 /**
  * in order to show toast with an easy way you will add next line to your(fluttertoast: ^3.1.0)
  * */
-class ShowToastButton extends StatelessWidget{
+class MakeHttpRequestButton extends StatelessWidget{
+  final Future<Post> post;
+
+  const MakeHttpRequestButton({Key key, this.post}) : super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -16,17 +21,16 @@ class ShowToastButton extends StatelessWidget{
       width: MediaQuery.of(context).size.width,
 
       margin: EdgeInsets.only(left: 60,right: 60),
-
       child: RaisedButton(
-
         color: Colors.white,
        elevation: 5,
        onPressed: (){
 
-        ShowToast(context, "Message Name --->");
+        ShowToast(context, "Making HTTP request ");
         fetchPost();
+
        },
-       child: Text("Show Toast  ",style: TextStyle(
+       child: Text("Make Http Request  ",style: TextStyle(
          decoration: TextDecoration.none,
          color: Colors.red
        ),),
@@ -49,7 +53,9 @@ class ShowToastButton extends StatelessWidget{
 
     if (response.statusCode == 200) {
       // If server returns an OK response, parse the JSON.
-      debugPrint("From 200");
+
+      var data=response.body;
+      debugPrint("From 200  $data");
       return Post.fromJson(json.decode(response.body));
     } else {
       // If that response was not OK, throw an error.
