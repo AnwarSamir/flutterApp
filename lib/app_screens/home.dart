@@ -6,6 +6,8 @@ import 'package:flutterasi/buttons/LoginButton.dart';
 import 'package:flutterasi/buttons/ShowToastButton.dart';
 import 'package:flutterasi/app_screens/DealingWithImage.dart';
 import 'package:flutterasi/buttons/MakeHttpRequestButton.dart';
+import 'package:flutterasi/buttons/ShowProgressDialog.dart';
+
 
 class home extends StatelessWidget {
   @override
@@ -27,7 +29,8 @@ class home extends StatelessWidget {
                   LongListButton(),
                   LoginButton(),
                   ShowToastButton(),
-                  MakeHttpRequestButton()
+                  MakeHttpRequestButton(),
+                  ShowProgressDialog()
                 ],
               ),
             )));
