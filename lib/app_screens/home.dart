@@ -7,6 +7,7 @@ import 'package:flutterasi/buttons/ShowToastButton.dart';
 import 'package:flutterasi/app_screens/DealingWithImage.dart';
 import 'package:flutterasi/buttons/MakeHttpRequestButton.dart';
 import 'package:flutterasi/buttons/ShowProgressDialog.dart';
+import 'package:flutterasi/buttons/BottomNavigationButton.dart';
 
 
 class home extends StatelessWidget {
@@ -30,7 +31,8 @@ class home extends StatelessWidget {
                   LoginButton(),
                   ShowToastButton(),
                   MakeHttpRequestButton(),
-                  ShowProgressDialog()
+                  ShowProgressDialog(),
+                  BottomNavigationButton()
                 ],
               ),
             )));
