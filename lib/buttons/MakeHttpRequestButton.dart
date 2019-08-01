@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:toast/toast.dart';
 import 'package:flutterasi/Models/Post.dart';
 import 'package:http/http.dart' as http;
+import 'package:progress_dialog/progress_dialog.dart';
 
 /**
  * in order to show toast with an easy way you will add next line to your(fluttertoast: ^3.1.0)
@@ -48,6 +49,7 @@ class MakeHttpRequestButton extends StatelessWidget{
 
 
   Future<Post> fetchPost() async {
+
     final response =
     await http.get('https://jsonplaceholder.typicode.com/posts/1');
 

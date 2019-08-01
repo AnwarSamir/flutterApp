@@ -9,6 +9,7 @@ import 'package:flutterasi/app_screens/DealingWithImage.dart';
 import 'package:flutterasi/buttons/MakeHttpRequestButton.dart';
 import 'package:flutterasi/buttons/ShowProgressDialog.dart';
 import 'package:flutterasi/buttons/BottomNavigationButton.dart';
+import 'package:flutterasi/buttons/HttpJsonWIthListButton.dart';
 
 
 class home extends StatelessWidget {
@@ -34,7 +35,9 @@ class home extends StatelessWidget {
                   MakeHttpRequestButton(),
                   ShowProgressDialog(),
                   BottomNavigationButton(),
-                  NavigationDrawerButton()
+                  NavigationDrawerButton(),
+                  HttpJsonWIthListButton()
+
                 ],
               ),
             )));
