@@ -47,7 +47,10 @@ class _MyCustomFormState extends State<MyCustomForm> {
             child: new Column(
               children: <Widget>[
 
-                new Text(dataFromShared),
+            Container(
+                margin:EdgeInsets.all(20.0),
+                child: Text(dataFromShared)
+            ),
                 new TextField(
                     controller: someTextController,
                     decoration: new InputDecoration(
