@@ -1,0 +1,40 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:flutterasi/app_screens/SharedPrefScreen.dart';
+import "package:progress_dialog/progress_dialog.dart";
+
+
+class SharedPrefButton extends StatelessWidget{
+  ProgressDialog pr;
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Container(
+      width: MediaQuery.of(context).size.width,
+
+      margin: EdgeInsets.only(left: 60,right: 60),
+
+      child: RaisedButton(
+
+        color: Colors.white,
+       elevation: 5,
+       onPressed: (){
+          Navigator.push(context,  MaterialPageRoute(builder: (context) => SharedPrefScreen()));
+       },
+       child: Text("Shared pref ",style: TextStyle(
+         decoration: TextDecoration.none,
+         color: Colors.red
+       ),),
+      ),
+    );
+    
+    
+  }
+
+
+
+
+
+
+}

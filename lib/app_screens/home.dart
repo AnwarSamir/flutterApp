@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterasi/buttons/NavigationDrawerButton.dart';
+import 'package:flutterasi/buttons/SharedPrefButton.dart';
 import 'package:flutterasi/images/googleIcon.dart';
 import 'package:flutterasi/buttons/bookButton.dart';
 import 'package:flutterasi/buttons/longListButton.dart';
@@ -36,7 +37,8 @@ class home extends StatelessWidget {
                   ShowProgressDialog(),
                   BottomNavigationButton(),
                   NavigationDrawerButton(),
-                  HttpJsonWIthListButton()
+                  HttpJsonWIthListButton(),
+                  SharedPrefButton()
 
                 ],
               ),
